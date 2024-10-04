@@ -1,3 +1,143 @@
-h1 {
-  color: red;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 10px;
+    
+    color: white;
+    position: relative; /* To allow absolute positioning of the illustration */
+    background: url(images/Illustration.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #040404;
+    padding: 10px 12px 10px 12px;
+    font-size: 18px;
+    width:375px;
+
+    
+}
+
+.header .logo {
+    color: white;
+}
+
+.header .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    text-align: left; 
+    flex-grow: 1;
+    padding-left: 15px; 
+    
+}
+
+.main-content h1 {
+    color: #ff7f27;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family:'Crete Round',serif;
+}
+
+.main-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Roboto',sans-serif;
+}
+
+.main-content h2 span {
+    font-weight: bold;
+}
+
+.main-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding: 0 15px 0 0; 
+    line-height: 1.5;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.social-icons i {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.social-icons i:hover {
+    color: #ff7f27;
+}
+
+
+.illustration-container {
+    position: absolute;
+    bottom: 0;
+    right: 10px; 
+    width: 150px; 
+}
+
+.illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 480px) {
+    .main-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .main-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .main-content p {
+        font-size: 0.9rem;
+    }
+
+    .social-icons i {
+        font-size: 20px;
+    }
+
+    .illustration-container {
+        width: 100px; 
+    }
+}
+
+
+@media (max-width: 375px) {
+    .illustration-container {
+        right: 0;
+        width: 150x; 
+    }
 }
