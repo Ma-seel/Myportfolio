@@ -129,6 +129,6 @@ body {
 @media (max-width: 375px) {
   .illustration-container {
     right: 0;
-    width: 150x;
+    width: 150px;
   }
 }
